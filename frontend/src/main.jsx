@@ -10,6 +10,7 @@ import SupportPage from './landing_page/support/SupportPage'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Navbar from './landing_page/Navbar'
 import Footer from './landing_page/Footer'
+import NotFound from './landing_page/NotFound'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -22,6 +23,7 @@ createRoot(document.getElementById('root')).render(
         <Route path='/products' element={<Product />} />
         <Route path='/pricing' element={<PricingPage />} />
         <Route path='/support' element={<SupportPage />} />
+        <Route path='*' element={<NotFound />} />
       </Routes>
       <Footer />
     </BrowserRouter>

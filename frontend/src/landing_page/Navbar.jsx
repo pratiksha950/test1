@@ -11,7 +11,7 @@ function Navbar() {
       <div className="container">
 
    
-        <Link className="navbar-brand" href="/">
+        <Link className="navbar-brand" to="/">
           <img
             src={logo}
             alt="Zerodha Logo"
