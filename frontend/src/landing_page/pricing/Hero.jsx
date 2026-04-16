@@ -1,4 +1,5 @@
 import React from 'react'
+import intradayTrades.svg
 
 function Hero() {
   return (
