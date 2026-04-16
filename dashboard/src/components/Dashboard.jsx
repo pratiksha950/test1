@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import { Routes, Route } from "react-router-dom"; // ✅ ADD THIS
+
 import App from '../App';
 import Funds from "./Funds";
 import Holdings from "./Holdings";
@@ -14,9 +16,10 @@ function Dashboard() {
       <GeneralContextProvider>
         <WatchList />
       </GeneralContextProvider>
+
       <div className="content">
         <Routes>
-          <Route exact path="/" element={<Summary />} />
+          <Route path="/" element={<Summary />} />
           <Route path="/orders" element={<Orders />} />
           <Route path="/holdings" element={<Holdings />} />
           <Route path="/positions" element={<Positions />} />
@@ -26,6 +29,6 @@ function Dashboard() {
       </div>
     </div>
   );
-};
+}
 
-export default Dashboard
+export default Dashboard;
