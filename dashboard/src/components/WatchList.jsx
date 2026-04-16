@@ -2,6 +2,7 @@ import React, { useState, useContext } from "react";
 import axios from "axios";
 import GeneralContext from "./GeneralContext";
 
+
 import { Tooltip, Grow } from "@mui/material";
 import {
   BarChartOutlined,
@@ -11,7 +12,7 @@ import {
 } from "@mui/icons-material";
 
 import { watchlist } from "../data/data";
-import { DoughnutChart } from "./DoughnoutChart";
+import DoughnutChart from "./DoughnutChart";
 
 function WatchList() {
   const labels = watchlist.map((item) => item.name);
