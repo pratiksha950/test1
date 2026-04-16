@@ -1,6 +1,6 @@
 import React from "react";
 import googlePlay from "../../assets/images/googlePlayBadge.svg";
-import appStore from "../../assets/images/appStoreBadge.svg";
+import appStore from "../../assets/images/appStoreBadge.svg"
 
 function LeftSection({ imageSrc, title, description, trydemo, learnmore }) {
   return (
@@ -16,7 +16,7 @@ function LeftSection({ imageSrc, title, description, trydemo, learnmore }) {
         <img 
           src={imageSrc} 
           alt={title} 
-          style={{ width: "90%", opacity: "0.9" }} 
+          style={{ width: "80%", opacity: "0.9" }} 
         />
       </div>
 
