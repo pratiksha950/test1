@@ -9,6 +9,7 @@ import Positions from "./Positions";
 import Summary from "./Summary";
 import WatchList from "./WatchList";
 import { GeneralContextProvider } from "./GeneralContext";
+import BuyActionWindow from './BuyActionWindow';
 
 function Dashboard() {
   return (

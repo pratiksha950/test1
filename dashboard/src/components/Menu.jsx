@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import logo from "../assets/logo.png";
 
 function Menu() {
   const [selectedMenu, setSelectedMenu] = useState(0);
@@ -18,12 +19,12 @@ function Menu() {
 
   return (
     <div className="menu-container">
-      <img src="/logo.png" alt="logo" style={{ width: "50px" }} />
+      <img src={logo} alt="logo" style={{ width: "50px" }} />
 
       <div className="menus">
         <ul>
           <li>
-            <Link to="/" onClick={() => handleMenuClick(0)}>
+            <Link to="/" onClick={() => handleMenuClick(0)} style={{ textDecoration: "none" }}>
               <p className={selectedMenu === 0 ? activeMenuClass : menuClass}>
                 Dashboard
               </p>
@@ -31,7 +32,7 @@ function Menu() {
           </li>
 
           <li>
-            <Link to="/orders" onClick={() => handleMenuClick(1)}>
+            <Link to="/orders" onClick={() => handleMenuClick(1)} style={{ textDecoration: "none" }}>
               <p className={selectedMenu === 1 ? activeMenuClass : menuClass}>
                 Orders
               </p>
@@ -39,7 +40,7 @@ function Menu() {
           </li>
 
           <li>
-            <Link to="/holdings" onClick={() => handleMenuClick(2)}>
+            <Link to="/holdings" onClick={() => handleMenuClick(2)} style={{ textDecoration: "none" }}>
               <p className={selectedMenu === 2 ? activeMenuClass : menuClass}>
                 Holdings
               </p>
@@ -47,7 +48,7 @@ function Menu() {
           </li>
 
           <li>
-            <Link to="/positions" onClick={() => handleMenuClick(3)}>
+            <Link to="/positions" onClick={() => handleMenuClick(3)} style={{ textDecoration: "none" }}>
               <p className={selectedMenu === 3 ? activeMenuClass : menuClass}>
                 Positions
               </p>
@@ -55,7 +56,7 @@ function Menu() {
           </li>
 
           <li>
-            <Link to="/funds" onClick={() => handleMenuClick(4)}>
+            <Link to="/funds" onClick={() => handleMenuClick(4)} style={{ textDecoration: "none" }}>
               <p className={selectedMenu === 4 ? activeMenuClass : menuClass}>
                 Funds
               </p>
@@ -63,7 +64,7 @@ function Menu() {
           </li>
 
           <li>
-            <Link to="/apps" onClick={() => handleMenuClick(5)}>
+            <Link to="/apps" onClick={() => handleMenuClick(5)} style={{ textDecoration: "none" }}>
               <p className={selectedMenu === 5 ? activeMenuClass : menuClass}>
                 Apps
               </p>

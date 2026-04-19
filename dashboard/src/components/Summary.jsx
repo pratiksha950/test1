@@ -3,10 +3,10 @@ import React from "react";
 function Summary() {
   return (
     <>
-      <div className="username">
-        <h6>Hi, User!</h6>
-        <hr className="divider" />
-      </div>
+        <div className="username">
+          <h6 class="mt-5 text-danger">Hi, User!</h6>
+          <hr className="divider" />
+        </div>
 
       <div className="section">
         <span>
