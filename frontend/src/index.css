@@ -1,0 +1,15 @@
+.nav-link{
+    margin-left: 40px;
+}
+.footer-bottom span {
+  color: #387ed1;
+  cursor: pointer;
+}
+
+.footer-bottom span:hover {
+  text-decoration: underline;
+}
+.footer-bottom p {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
